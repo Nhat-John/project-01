@@ -130,20 +130,17 @@ a {
 .hero-wrap {
     position: relative;
     display: flex;
+    align-items: center;
     width: 100%;
     height: calc(100vh - 90px);
     background: #E6F0FF;
 }
 
-.hero {
-    margin-top: 118px;
-}
-
-.hero .info {
+.hero-wrap .info {
     width: 50%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     color: #687690;
     font-size: 1.8rem;
     font-weight: 500;
@@ -151,7 +148,7 @@ a {
     letter-spacing: 0.01em;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin: 8px 0 30px;
     color: #000336;
     font-size: 6.2rem;
@@ -159,18 +156,18 @@ a {
     line-height: 1.119;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     color: #5A6473;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.79;
 }
 
-.hero .info-btn {
+.hero-wrap .info-btn {
     margin-top: 40px;
 }
 
-.hero img {
+.hero-wrap img {
     position: absolute;
     right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;
