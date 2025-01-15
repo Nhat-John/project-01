@@ -581,9 +581,12 @@ a {
     background: #F9F9F9;
     width: 28px;
     height: 28px;
-    margin-right: 28px;
     border-radius: 4px;
     transition: background .25s linear;
+}
+
+.footer .social-media a+a {
+    margin-left: 16px;
 }
 
 .footer .social-media a:hover {
