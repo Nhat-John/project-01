@@ -418,23 +418,80 @@ a {
     border-radius: 12px;
 }
 
-.stats .sub-img {
+.stats-trend {
     position: absolute;
     top: 0;
     left: 0;
-    /* transform: translateX(50%); */
-    border-radius: 12px;
+    background: #fff;
+    padding: 45px 22px 0;
+    border-radius: 0 0 12px 12px;
     width: 239px;
-    height: 252px;
-    object-fit: cover;
+    min-height: 252px;
 }
+
+.stats-trend .number-trend {
+    color: #000339;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.stats-trend .desc {
+    margin-top: 8px;
+    color: #A7A7A7;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.stats-trend .seperate {
+    margin-top: 25px;
+    height: 1.2px;
+    background: #E9E9E9;
+}
+
+.avatar-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+    margin-top: 26px;
+}
+
+.avatar-group {
+    display: flex;
+}
+
+.avatar-block .avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    /* avatar random */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color-avatar, #fff);
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    font-weight: 450;
+    letter-spacing: -0.02em;
+}
+
+.avatar-block .avatar+.avatar {
+    margin-left: -3px;
+}
+
+.avatar-block .avatar-random {}
 
 .stats .info {
     padding-left: 165px;
 }
 
 .stats .title,
-.stats .desc {
+.stats .info .desc {
     width: 309px;
 }
 
@@ -458,7 +515,7 @@ a {
     height: 4px;
 }
 
-.stats .desc {
+.stats .info .desc {
     color: #5A6473;
     font-size: 1.6rem;
     font-weight: 400;
