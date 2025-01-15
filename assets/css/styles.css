@@ -60,17 +60,18 @@ a {
 }
 
 /*********** Header ***********/
-.header {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+.fixed-navbar {
+    position: sticky;
+    top: -26px;
+    z-index: 1;
     background: #E6F0FF;
+    padding-top: 26px;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -121,8 +122,16 @@ a {
     font-size: 1.4rem;
 }
 
+.hero-wrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 90px);
+    background: #E6F0FF;
+}
+
 .hero {
-    margin-top: 130px;
+    margin-top: 118px;
 }
 
 .hero .info {
